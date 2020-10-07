@@ -5,7 +5,7 @@ layout: default
 
 	<!-- Home start -->
 
-	<section id="home" class="home-banner module-image js-height-full">
+	<section id="home" class="home-banner module-image js-height-full banner-clip-2">
 		
 		{% include nav.html %}
 
@@ -15,6 +15,12 @@ layout: default
 		
 		<div class="mouse-icon">
 			<div class="wheel"></div>
+		</div>
+
+		<div class="banner-clip-2-svg">
+			<svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
+				<polygon points="-30,300 355.167,210.5 1432.5,290 1920,198.5 1920,300"></polygon>
+			</svg>
 		</div>
 
 	</section>
@@ -451,7 +457,7 @@ layout: default
 			<div class="row">
 
             	{% for post in site.posts limit:3 %}
-					<div class="col-md-4">
+					<div class="col-sm-4">
 						<a href="{{site.baseurl}}{{post.url}}" class="blogList wow fadeInUp">
 							<div class="blogList-img">
 								{% if post.banner_image %}
@@ -469,7 +475,7 @@ layout: default
 					</div>
 				{% endfor %}
 
-				<div class="col-md-12">
+				<div class="col-sm-12">
 					<a class="blog-viewMore" href="{{site.baseurl}}/blog.html">VIEW MORE</a>
 				</div>
 

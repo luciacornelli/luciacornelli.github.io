@@ -2,17 +2,18 @@
 layout: default
 ---
 
-
 	<!-- Home start -->
 
-	<section id="home" class="home-banner module-image js-height-full">
+	<section id="home" class="home-banner module-image js-height-full banner-clip">
 		
 		{% include nav.html %}
 
 		<div class="intro">
 			<h1>I am Alice Joseph</h1>
 		</div>
-		
+
+		<canvas class="background"></canvas>
+
 		<div class="mouse-icon">
 			<div class="wheel"></div>
 		</div>
@@ -20,7 +21,7 @@ layout: default
 	</section>
 
 	<!-- Home end -->
-
+	
 	<!-- About start -->
 
 	<section id="about" class="module">
@@ -451,7 +452,7 @@ layout: default
 			<div class="row">
 
             	{% for post in site.posts limit:3 %}
-					<div class="col-md-4">
+					<div class="col-sm-4">
 						<a href="{{site.baseurl}}{{post.url}}" class="blogList wow fadeInUp">
 							<div class="blogList-img">
 								{% if post.banner_image %}
@@ -469,7 +470,7 @@ layout: default
 					</div>
 				{% endfor %}
 
-				<div class="col-md-12">
+				<div class="col-sm-12">
 					<a class="blog-viewMore" href="{{site.baseurl}}/blog.html">VIEW MORE</a>
 				</div>
 

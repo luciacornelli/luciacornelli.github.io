@@ -5,21 +5,26 @@ layout: default
 
 	<!-- Home start -->
 
-	<section id="home" class="home-banner module-image js-height-full">
+	<section id="home" class="home-banner module-image js-height-full banner-clip">
 		
 		{% include nav.html %}
 
 		<div class="intro">
 			<h1>I am Alice Joseph</h1>
 		</div>
-		
+
+		<a id="video" class="youtube-bg" data-property="{videoURL:'https://youtu.be/S4L8T2kFFck',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a>
+
 		<div class="mouse-icon">
 			<div class="wheel"></div>
 		</div>
 
+
+
 	</section>
 
 	<!-- Home end -->
+
 
 	<!-- About start -->
 
@@ -451,7 +456,7 @@ layout: default
 			<div class="row">
 
             	{% for post in site.posts limit:3 %}
-					<div class="col-md-4">
+					<div class="col-sm-4">
 						<a href="{{site.baseurl}}{{post.url}}" class="blogList wow fadeInUp">
 							<div class="blogList-img">
 								{% if post.banner_image %}
@@ -469,7 +474,7 @@ layout: default
 					</div>
 				{% endfor %}
 
-				<div class="col-md-12">
+				<div class="col-sm-12">
 					<a class="blog-viewMore" href="{{site.baseurl}}/blog.html">VIEW MORE</a>
 				</div>
 
@@ -538,3 +543,4 @@ layout: default
 	</section>
 
 	<!-- Contact end -->
+
