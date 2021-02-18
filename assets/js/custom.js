@@ -134,6 +134,7 @@ window.onload = function() {
 		});
 
 	}
+	$('#first-data-group-id').click();
 };
 
 /* ---------------------------------------------- /*
