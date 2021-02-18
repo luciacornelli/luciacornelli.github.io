@@ -1177,6 +1177,15 @@ figure {
 	box-shadow: -6px 10px 40px rgba(0,0,0,0.06);
 }
 
+.contact-icon {
+	color: #2196f3;
+	font-size: 23px;
+}
+
+.contact-text {
+	font-size: 21px;
+}
+
 .iconbox-text {
 	padding-top: 30px;
 }

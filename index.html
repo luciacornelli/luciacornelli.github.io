@@ -10,7 +10,7 @@ layout: default
 		{% include nav.html %}
 
 		<div class="intro">
-			<h1>I am Alice Joseph</h1>
+			<h1>Stay connected.</h1>
 		</div>
 		
 		<div class="mouse-icon">
@@ -417,16 +417,36 @@ layout: default
 
 					<div class="testimonials owl-carousel wow fadeInUp">
 						<div class="single-testimonials">
-							<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
-							<span>Jon Doe, Web Developer</span>
+							<p>For a rusty beginner like me, it was an amazing experience; I saw slow but steady progress and always respecting my pace. Lucia is clear in the explanations, she manages and prevents the possible mistakes that a layman inevitably tends to commit and she has a super beautiful voice!</p>
+							<span>Flora</span>
 						</div>
 						<div class="single-testimonials">
-							<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
-							<span>Jon Doe, Web Developer</span>
+							<p>Lucia class had a perfect balance between calming and invigorating. The meditation in the beginning helped me to enter in a positive state of mind and the practice was amazing! I strongly recommend it!</p>
+							<span>Cristina</span>
 						</div>
 						<div class="single-testimonials">
-							<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
-							<span>Jon Doe, Web Developer</span>
+							<p>Fantastic classes, they helped me a lot especially during the lockdown periods to relax the anxiety and above all to relax the body. A weekly cure that I would recommend to everyone. Lucia is great in guiding the lesson and very attentive to the needs of each student, in addition she has a super relaxing voice. Highly recommended!</p>
+							<span>Maria Stella</span>
+						</div>
+						<div class="single-testimonials">
+							<p>Lulu is a hard-working yoga teacher. Passionate to teach yoga, she provides a unique and comfortable environment for her students. As a yoga beginner, I've developed my practice by attending a bunch of classes with her. In a nutshell, I have already learned how to connect my physical body with my spiritual feelings during the practice. Her inspiring and in-depth classes are an enormous opportunity to get physical skills (flexibility, balance, abs control, breath), as well as a pivotal moment to re-connect with the mind. </p>
+							<span>Sergio</span>
+						</div>
+						<div class="single-testimonials">
+							<p>I enjoyed the international classes in English and the various proposals of the lessons, sometimes very dynamic, sometimes more oriented towards relaxation… Lucia is a passionate, motivated and motivating teacher, even with “difficult” students like me, who had never practiced yoga before.</p>
+							<span>Veronica</span>
+						</div>
+						<div class="single-testimonials">
+							<p>Lucia is an awesome teacher and a genuinely lovely person as well! She puts you at ease and all the instructions are clear and precise. Her class is for all levels: you can work out and feel relaxed at the same time. Absolutely recommended!</p>
+							<span>Beatrice</span>
+						</div>
+						<div class="single-testimonials">
+							<p>I took some classes with this extraordinary teacher, her style is very stimulating, she has determination and shows it in each of her classes, renewing her repertoire. I'd recommend her even for the first approach.</p>
+							<span>Edoardo</span>
+						</div>
+						<div class="single-testimonials">
+							<p>I am grateful for being able to take a class with Lulu, she held such a safe space to both honor my own body's needs and explore my edges. I would recommend to new yoga practitioners and experienced yogis to take a class with her. She is rooted in love, it radiates from her love for the practice, love for humans, love for the community that the yoga connection creates.</p>
+							<span>Cassidy</span>
 						</div>
 					</div>
 
@@ -440,42 +460,42 @@ layout: default
 
 	<!-- Blog start -->
 
-	<section id="blog" class="module blog">
-		<div class="container">
+<!--	<section id="blog" class="module blog">-->
+<!--		<div class="container">-->
 
-			<div class="module-header wow fadeInUp">
-				<h2 class="module-title"> Blog </h2>
-				<div class="module-line"></div>
-			</div>
+<!--			<div class="module-header wow fadeInUp">-->
+<!--				<h2 class="module-title"> Blog </h2>-->
+<!--				<div class="module-line"></div>-->
+<!--			</div>-->
 
-			<div class="row">
+<!--			<div class="row">-->
 
-            	{% for post in site.posts limit:3 %}
-					<div class="col-md-4">
-						<a href="{{site.baseurl}}{{post.url}}" class="blogList wow fadeInUp">
-							<div class="blogList-img">
-								{% if post.banner_image %}
-									<img src="{{ "/assets/images/" | append: post.banner_preview | prepend: site.baseurl }}" alt="Blog Desc">
-								{% endif %}
-								{% if post.category %}
-								<span>{{post.category}}</span>
-								{% endif %}
-							</div>
-							<div class="blogList-desc">
-								<h3>{{post.title}}</h3>
-								<div>{{post.description}}</div>
-							</div>
-						</a>
-					</div>
-				{% endfor %}
+<!--            	{% for post in site.posts limit:3 %}-->
+<!--					<div class="col-md-4">-->
+<!--						<a href="{{site.baseurl}}{{post.url}}" class="blogList wow fadeInUp">-->
+<!--							<div class="blogList-img">-->
+<!--								{% if post.banner_image %}-->
+<!--									<img src="{{ "/assets/images/" | append: post.banner_preview | prepend: site.baseurl }}" alt="Blog Desc">-->
+<!--								{% endif %}-->
+<!--								{% if post.category %}-->
+<!--								<span>{{post.category}}</span>-->
+<!--								{% endif %}-->
+<!--							</div>-->
+<!--							<div class="blogList-desc">-->
+<!--								<h3>{{post.title}}</h3>-->
+<!--								<div>{{post.description}}</div>-->
+<!--							</div>-->
+<!--						</a>-->
+<!--					</div>-->
+<!--				{% endfor %}-->
 
-				<div class="col-md-12">
-					<a class="blog-viewMore" href="{{site.baseurl}}/blog.html">VIEW MORE</a>
-				</div>
+<!--				<div class="col-md-12">-->
+<!--					<a class="blog-viewMore" href="{{site.baseurl}}/blog.html">VIEW MORE</a>-->
+<!--				</div>-->
 
-			</div><!-- .row -->
-		</div><!-- .container -->
-	</section>
+<!--			</div>&lt;!&ndash; .row &ndash;&gt;-->
+<!--		</div>&lt;!&ndash; .container &ndash;&gt;-->
+<!--	</section>-->
 
 	<!-- Blog end -->
 
@@ -508,29 +528,43 @@ layout: default
 			<div class="row">
 
 				<div class="col-md-6 offset-md-3">
+					{% if site.instagram_username %}
+					<div class="text-center form-group wow fadeInUp contact-text">
+						<i class="contact-icon fab fa-instagram"></i>
+						<a href="https://www.instagram.com/{{ site.instagram_username }}">Instagram</a>
+					</div>
+					{% endif %}
 
-					<form id="contact-form" action="#">
-						<div class="ajax-hidden">
-							<div class="form-group wow fadeInUp">
-								<label class="sr-only" for="c_name">Name</label>
-								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name" required>
-							</div>
+					{% if site.facebook_username %}
+					<div class="text-center form-group wow fadeInUp contact-text" data-wow-delay=".1s">
+						<i class="contact-icon fab fa-facebook-messenger"></i>
+						<a href="https://m.me/{{ site.facebook_username }}">Facebook</a>
+					</div>
+					{% endif %}
 
-							<div class="form-group wow fadeInUp" data-wow-delay=".1s">
-								<label class="sr-only" for="c_email">Email address</label>
-								<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail" required>
-							</div>
+					{% if site.whatsapp_username %}
+					<div class="text-center form-group wow fadeInUp contact-text" data-wow-delay=".2s">
+						<i class="contact-icon fab fa-whatsapp"></i>
+						<a href="https://api.whatsapp.com/send?phone={{ site.whatsapp_username }}">WhatsApp</a>
+					</div>
+					{% endif %}
 
-							<div class="form-group wow fadeInUp" data-wow-delay=".2s">
-								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Your message" required></textarea>
-							</div>
+					{% if site.telegram_username %}
+					<div class="text-center form-group wow fadeInUp contact-text" data-wow-delay=".3s">
+						<i class="contact-icon fab fa-telegram"></i>
+						<a href="https://t.me/{{ site.telegram_username }}">Telegram</a>
+					</div>
+					{% endif %}
 
-							<button type="submit" class="btn btn-block btn-custom-2 wow fadeInUp" data-wow-delay=".3s">Send Message
-							</button>
-						</div>
-						<div class="ajax-response"></div>
-					</form>
+					<div class="text-center form-group wow fadeInUp contact-text" data-wow-delay=".4s">
+						<i class="contact-icon fas fa-phone"></i>
+						<a href="tel:{{ site.whatsapp_username }}">+{{ site.whatsapp_username }}</a>
+					</div>
 
+					<div class="text-center form-group wow fadeInUp contact-text" data-wow-delay=".5s">
+						<i class="contact-icon fa fa-envelope"></i>
+						<a href="mailto:{{ site.email }}">{{ site.email }}</a>
+					</div>
 				</div>
 
 			</div><!-- .row -->
