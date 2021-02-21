@@ -134,7 +134,14 @@ window.onload = function() {
 		});
 
 	}
-	$('#first-data-group-id').click();
+
+	// ugly workaround to fix display issue of list-item on page load
+	let timeout;
+	for (timeout = 100; timeout < 2000; timeout += 100) {
+		setTimeout(function() {
+			$('#first-data-group-id').click();
+		}, timeout);
+	}
 };
 
 /* ---------------------------------------------- /*
