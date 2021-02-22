@@ -989,7 +989,8 @@ textarea.form-control {
 	list-style: outside none none;
 	margin-bottom: 20px;
 	padding: 0 10px;
-	width: 33.333%;
+	/*width: 33.333%;*/
+	width: 50%;
 }
 .list-items-container .list-item img {
 	display: block;
