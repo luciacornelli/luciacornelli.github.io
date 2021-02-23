@@ -1187,6 +1187,10 @@ figure {
 	font-size: 21px;
 }
 
+.contact-link {
+	color: rgba(var(--d69,0,149,246),1);
+}
+
 .iconbox-text {
 	padding-top: 30px;
 }
@@ -1206,6 +1210,12 @@ figure {
 
 .position-relative {
 	position: relative;
+}
+
+.side-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .side-image-wrapper {
@@ -1237,7 +1247,7 @@ figure {
 }
 
 .side-image-text {
-	padding: 60px 60px 50px;
+	padding: 0 60px 0;
 }
 
 .iconboxleft {
