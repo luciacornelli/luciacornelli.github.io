@@ -11,7 +11,7 @@ $(window).on('load', function() {
 	$('#loading').delay(350).fadeOut('slow');
 	// ugly workaround to fix display issue of list-item on page load
 	let timeout;
-	for (timeout = 0; timeout < 20000; timeout += 200) {
+	for (timeout = 0; timeout < 20000; timeout += 100) {
 		setTimeout(function() {
 			$('.active').click();
 			}, timeout);
