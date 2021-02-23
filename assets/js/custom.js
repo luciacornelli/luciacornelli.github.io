@@ -9,6 +9,13 @@
 $(window).on('load', function() {
 	$('#loading').fadeOut();
 	$('#loading').delay(350).fadeOut('slow');
+	// ugly workaround to fix display issue of list-item on page load
+	let timeout;
+	for (timeout = 0; timeout < 1000; timeout += 50) {
+		setTimeout(function() {
+			$('#first-data-group-id').click();
+		}, timeout);
+	}
 });
 
 /* ---------------------------------------------- /*
@@ -133,14 +140,6 @@ window.onload = function() {
 			selector: '.background'
 		});
 
-	}
-
-	// ugly workaround to fix display issue of list-item on page load
-	let timeout;
-	for (timeout = 100; timeout < 2000; timeout += 100) {
-		setTimeout(function() {
-			$('#first-data-group-id').click();
-		}, timeout);
 	}
 };
 
