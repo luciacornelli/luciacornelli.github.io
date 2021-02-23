@@ -11,7 +11,7 @@ $(window).on('load', function() {
 	$('#loading').delay(350).fadeOut('slow');
 	// ugly workaround to fix display issue of list-item on page load
 	let timeout;
-	for (timeout = 0; timeout < 1000; timeout += 50) {
+	for (timeout = 0; timeout < 2000; timeout += 50) {
 		setTimeout(function() {
 			$('#first-data-group-id').click();
 		}, timeout);
@@ -153,3 +153,8 @@ if ($('.youtube-bg').length > 0) {
 
 
 })(jQuery);
+
+// hide navbar on click
+$('.navbar-nav>li>a').on('click', function(){
+	$('.navbar-collapse').collapse('hide');
+});
