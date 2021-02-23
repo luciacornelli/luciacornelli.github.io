@@ -12,9 +12,7 @@ $(window).on('load', function() {
 	// ugly workaround to fix display issue of list-item on page load
 	let timeout;
 	for (timeout = 0; timeout < 2000; timeout += 50) {
-		setTimeout(function() {
-			$('#first-data-group-id').click();
-		}, timeout);
+		$('.active').click();
 	}
 });
 
